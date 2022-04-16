@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px !important;
+}
+
+body {
+    font-family: 'Poppins', san-serif !important;
+    background-color: #e7e8ec !important;
+}
+
+.body-section {
+    background-color: #e6e7ebee;
+    width: 100% !important;
+    height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 500;
+    /* background-color: #297ae6; */
+    background: rgb(22, 147, 233);
+    background: linear-gradient(90deg, rgb(22, 135, 233) 0%, rgba(22, 135, 230, 1) 50%, rgba(0, 176, 255, 1) 100%);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+header h6 {
+    font-size: 14px;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-child {
+    flex: 1;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 100%;
+}
+
+.header-child div {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.dark-mode {
+    border-right: 1px solid #fff;
+    border-right-width: 0.2em;
+    padding-right: 0.5rem;
+}
+
+.profile img {
+    border-radius: 50%;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0.5rem;
+    background-color: rgb(243, 243, 243);
+}
+
+.search-section div {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+}
+
+.categories {
+    gap: 2px;
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: #297ae6;
+    background-color: rgb(243, 243, 243) !important;
+    /* overflow-x: visible; */
+}
+
+.categories div {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    border: 1px solid #297ae6;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+}
+
+.location input {
+    width: 100%;
+    border: none;
+    border-radius: 0.1rem;
+    border-bottom: 2px solid #d5d7dea2;
+    outline: none;
+    color: #59595a;
+    font-weight: 500;
+    padding-left: 3px;
+}
+
+.location input::placeholder {
+    color: #b0b0b1;
+    padding-left: 3px;
+}
+
+#search-button div:first-child {
+    flex: 3;
+}
+
+#search-button div:last-child {
+    background: rgb(22, 147, 233);
+    background: linear-gradient(90deg, rgba(22, 147, 233, 1) 0%, rgba(22, 135, 230, 1) 50%, rgba(0, 176, 255, 1) 100%);
+    color: #fff;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.main-job-page {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+    background-color: rgb(243, 243, 243);
+    border-radius: 3px;
+    padding: 0.5rem;
+}
+
+aside {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px !important;
+    color: #747475;
+    border-radius: 3px;
+}
+
+aside div {
+    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.alert-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    background: rgb(218, 237, 250);
+}
+
+.alert-section h6 {
+    color: #404041;
+}
+
+.alert-section input {
+    width: 90%;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+    border: none;
+    border-radius: 0.1rem;
+    border: #d5d7dea2;
+    outline: none;
+    color: #414142;
+    font-weight: 500;
+    padding-left: 3px;
+}
+
+
+.alert-section input::placeholder {
+    color: #b0b0b1;
+    padding-left: 3px;
+}
+
+.alert-section button {
+    padding-left: 0 !important;
+    margin-left: 0px !important;
+}
+
+.button {
+    background: rgb(33, 115, 247);
+    color: #fff;
+    width: 70%;
+    border-radius: 3px;
+    border: rgb(10, 82, 238);
+    outline: none;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    padding: 3px;
+}
+
+.emp_type {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.emp_type div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#filter-2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.emp_type span {
+    background-color: #e0e0e0ed;
+    width: 23px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d4d4d4ea;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+/* =========================== Job Main Section======================================*/
+main {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    padding: 0.5rem;
+}
+
+.job-list-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #6f6f70;
+}
+
+.job-section {
+    display: grid;
+    width: 100%;
+    gap: 0.5em;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.job-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: space-around;
+    gap: 5px;
+    box-shadow: 1px 1px 2px 1px #989899df;
+    border-radius: 5px;
+    padding: 1em
+}
+
+.job-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left !important;
+}
+
+.job-detail p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+
+#job-image img {
+    width: 30px;
+    height: 30px;
+}
+
+.job-categories {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+
+.job-categories div {
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 237, 250);
+    color: #638cc0;
+    border: 1px solid #d1e5ff;
+    border-radius: 3px;
+}
+
+.job-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: normal;
+}
+
+.job-buttons button {
+    width: 100%;
+}
+
+/* Smaller Screens*/
+@media only screen and (max-width: 900px) {
+    header {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header-child {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .search-section {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .search-section div {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    main {
+        display: column;
+    }
+
+    .job-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .job-card {
+        margin: 0.3rem;
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+}

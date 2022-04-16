@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This job search engine is in production by Mark Kasule, Please contact before using!!!">
+    <meta name="author" content="Mark Kasule">
+    <link rel="shortcut icon" href="./images/job-icon.ico" type="image/x-icon">
+    <title>Job Hunter</title>
+
+    <link rel="stylesheet" href="./source/style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!--Main Body-->
+    <section class="container body-section">
+
+        <!--Menu-->
+        <header class="container">
+            <div class="header-child">
+                <img src="./images/job-icon.png" alt="logo" width="35" height="auto">
+            </div>
+            <div class="header-child">
+                <div>
+                    <h6>Find Jobs</h6>
+                </div>
+                <div>
+                    <h6>Review Companies</h6>
+                </div>
+                <div>
+                    <h6>Compare Salaries</h6>
+                </div>
+            </div>
+            <div class="header-child">
+                <div>
+                    <div class="dark-mode">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                            viewBox="0 0 24 24" width="24px" fill="#fff">
+                            <rect fill="none" height="24" width="24" />
+                            <path
+                                d="M11.01,3.05C6.51,3.54,3,7.36,3,12c0,4.97,4.03,9,9,9c4.63,0,8.45-3.5,8.95-8c0.09-0.79-0.78-1.42-1.54-0.95 c-0.84,0.54-1.84,0.85-2.91,0.85c-2.98,0-5.4-2.42-5.4-5.4c0-1.06,0.31-2.06,0.84-2.89C12.39,3.94,11.9,2.98,11.01,3.05z" />
+                        </svg>
+                    </div>
+                    <!--Profile-->
+                    <div class="profile">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
+                                viewBox="0 0 24 24" width="24px" fill="#fff">
+                                <g>
+                                    <rect fill="none" height="24" width="24" x="0" />
+                                    <path
+                                        d="M19,10c1.13,0,2.16-0.39,3-1.02V18c0,1.1-0.9,2-2,2H4c-1.1,0-2-0.9-2-2V6c0-1.1,0.9-2,2-2h10.1C14.04,4.32,14,4.66,14,5 c0,1.48,0.65,2.79,1.67,3.71L12,11L5.3,6.81C4.73,6.46,4,6.86,4,7.53c0,0.29,0.15,0.56,0.4,0.72l7.07,4.42 c0.32,0.2,0.74,0.2,1.06,0l4.77-2.98C17.84,9.88,18.4,10,19,10z M16,5c0,1.66,1.34,3,3,3s3-1.34,3-3s-1.34-3-3-3S16,3.34,16,5z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div>
+                            <img src="./images/profile.svg" alt="profile image" width="30" height="30">
+                        </div>
+                        <div>
+                            <h6>Mark Kasule</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div>
+            <hr>
+        </div>
+
+        <!--Search-->
+        <section class="container search-section">
+
+            <div class="categories">
+                <div id="category-type">
+                    Developers
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="24px"
+                        fill="#297ae6" id="category-type-span">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z" />
+                    </svg>
+                </div>
+                <div id="category-location">
+                    UI Designers
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="24px"
+                        fill="#297ae6">
+                        <path d="M0 0h24v24H0V0z" fill="none" id="category-location-span" />
+                        <path
+                            d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="location">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="19px" viewBox="0 0 24 24" width="24px"
+                        fill="#297ae6">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M18.75 3.94L4.07 10.08c-.83.35-.81 1.53.02 1.85L9.43 14c.26.1.47.31.57.57l2.06 5.33c.32.84 1.51.86 1.86.03l6.15-14.67c.33-.83-.5-1.66-1.32-1.32z" />
+                    </svg>
+                    <input type="search" placeholder="Silver Spring, M.D" autocomplete id="location-input" />
+                </div>
+            </div>
+            <div class="location">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="19px" viewBox="0 0 24 24" width="24px"
+                        fill="#297ae6">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" />
+                    </svg>
+                    <input type="search" placeholder="Job Type" autocomplete />
+                </div>
+            </div>
+            <div class="location" id="search-button">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="19px" viewBox="0 0 24 24" width="24px"
+                        fill="#297ae6">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M10 16V8c0-1.1.89-2 2-2h9V5c0-1.1-.9-2-2-2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-1h-9c-1.11 0-2-.9-2-2zm3-8c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h9V8h-9zm3 5.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+                    </svg>
+                    <input type="search" placeholder="Salaries Expectation" autocomplete />
+                </div>
+                <div>
+                    Search
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Job Content-->
+        <section class="main-job-page">
+            <!--Side Filters-->
+            <aside>
+                <!--Keywords-->
+                <div class="alert-section">
+                    <h6>Create Job Alert</h6>
+                    <p>You won't miss new daily job postings when you create and add your job keyword</p>
+                    <input type="search" placeholder="Enter job keyword" autocomplete />
+                    <button class="button" type="submit">Create Job Alerts</button>
+                </div>
+                <!--More filters-->
+                <!--Type-->
+                <div class="emp_type">
+
+                    <h6>Type of Employment</h6>
+
+                    <div>
+                        <div id="fliter-1"><input type="checkbox" name="full-time" id="full-time">Full-time</div>
+                        <div id="filter-2"><span>4</span></div>
+                    </div>
+                    <div>
+                        <div id="fliter-1">
+                            <!--Temporarily disabled-->
+                            <input type="checkbox" name="part-time" id="part-time" disabled="disabled">Part-time</div>
+                        <div id="filter-2"><span>1</span></div>
+                    </div>
+                    <div>
+                        <div id="fliter-1"><input type="checkbox" name="contract" id="contract">Contract</div>
+                        <div id="filter-2"><span>3</span></div>
+                    </div>
+                    <div>
+                        <div id="fliter-1"><input type="checkbox" name="internships" id="intern">Internship</div>
+                        <div id="filter-2"><span>2</span></div>
+                    </div>
+                </div>
+
+                <!--Levels-->
+                <div class="emp_type">
+
+                    <h6>Experience Level</h6>
+
+                    <div>
+                        <div id="filter-1"><input type="checkbox" name="entry-level" id="full-time"
+                                disabled="disabled">Entry-Level</div>
+                        <div id="filter-2"><span>5</span></div>
+                    </div>
+                    <div>
+                        <div id="filter-1"><input type="checkbox" name="mid-level" id="full-time"
+                                disabled="disabled">Middle Level</div>
+                        <div id="filter-2"><span>2</span></div>
+                    </div>
+                    <div>
+                        <div id="filter-1"><input type="checkbox" name="senior" id="full-time"
+                                disabled="disabled">Senior Level</div>
+                        <div id="filter-2"><span>3</span></div>
+                    </div>
+                </div>
+
+                <!--Salaries-->
+                <!--Type-->
+                <div class="emp_type">
+
+                    <h6>Salary Range</h6>
+
+                    <div>
+                        <div id="fliter-1"><input type="checkbox" name="full-time" id="full-time"
+                                disabled="disabled">30k-50k /yr</div>
+                        <div id="filter-2"><span>0</span></div>
+                    </div>
+                    <div>
+                        <div id="fliter-1"><input type="checkbox" name="part-time" id="full-time"
+                                disabled="disabled">50k-70k /yr</div>
+                        <div id="filter-2"><span>4</span></div>
+                    </div>
+                    <div>
+                        <div id="fliter-1"><input type="checkbox" name="contract" id="full-time"
+                                disabled="disabled">70k-90k /yr</div>
+                        <div id="filter-2"><span>3</span></div>
+                    </div>
+                    <div>
+                        <div id="fliter-1"><input type="checkbox" name="internships" id="full-time"
+                                disabled="disabled">100k-120k/yr</div>
+                        <div id="filter-2"><span>2</span></div>
+                    </div>
+                </div>
+            </aside>
+
+            <!--Main Job List-->
+            <main>
+                <div class="job-list-header">
+                    <div>
+                        <h6>Showing <span id="number-of-jobs"></span> Jobs</h6>
+                    </div>
+                    <div>
+                        <p>Sort By Newest Jobs</p>
+                    </div>
+                </div>
+
+                <!--Grid Content Jobs-->
+                <div class="job-section" id="job-section">
+                    <!--Job 1-->
+                    <!-- <div class="job-card" id="job-card">
+                        <div id="job-image">
+                            <img src="./images/airbnb.png" alt="company image">
+                        </div>
+                        <div class="job-detail">
+                            <h6>Software Engineer</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsam neque iste porro
+                                temporibus repellat id repellendus labore fugiat tenetur. Ut animi odio, fugiat
+                                veritatis praesentium rerum facilis cupiditate vel!</p>
+                        </div>
+                        <div class="job-categories">
+                            <div>
+                                Full Time
+                            </div>
+                            <div>
+                                Est. 70k-90k
+                            </div>
+                            <div>
+                                Senior Level
+                            </div>
+                        </div> -->
+
+                    <!--Buttons-->
+                    <!-- <div class="job-buttons">
+                            <button class="button" id="apply-now">Apply Now</button>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px"
+                                fill="#297ae6">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path
+                                    d="M19.66 3.99c-2.64-1.8-5.9-.96-7.66 1.1-1.76-2.06-5.02-2.91-7.66-1.1-1.4.96-2.28 2.58-2.34 4.29-.14 3.88 3.3 6.99 8.55 11.76l.1.09c.76.69 1.93.69 2.69-.01l.11-.1c5.25-4.76 8.68-7.87 8.55-11.75-.06-1.7-.94-3.32-2.34-4.28zM12.1 18.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z" />
+                            </svg>
+                        </div>
+                    </div> -->
+
+                </div>
+
+            </main>
+        </section>
+
+    </section>
+
+
+    <script type="text/javascript" src="./source/app.js"></script>
+    <!--bootstrap scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

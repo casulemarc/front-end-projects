@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Table Sort</title>
+  </head>
+  <body>
+    <section id="tableSection">
+      <div class="table-title-div">
+        <h1>Sport Bar Standings</h1>
+      </div>
+
+      <div class="table-div">
+        <table id="table">
+          <tr>
+            <th id="header" onclick="sortTable(0)">Club</th>
+            <th id="header" onclick="sortTable(1)">Played</th>
+            <th id="header" onclick="sortTable(2)">Points</th>
+            <th id="header" onclick="sortTable(3)">Wins</th>
+            <th id="header" onclick="sortTable(4)">Losses</th>
+            <th id="header" onclick="sortTable(5)">Draws</th>
+          </tr>
+          <tbody>
+            <tr>
+              <td>Arsenal</td>
+              <td>5</td>
+              <td>10</td>
+              <td>3</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Manchester United</td>
+              <td>5</td>
+              <td>12</td>
+              <td>4</td>
+              <td>0</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Manchester City</td>
+              <td>6</td>
+              <td>11</td>
+              <td>3</td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Liverpool</td>
+              <td>5</td>
+              <td>13</td>
+              <td>4</td>
+              <td>1</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Chelsea</td>
+              <td>5</td>
+              <td>7</td>
+              <td>2</td>
+              <td>2</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Everton</td>
+              <td>6</td>
+              <td>4</td>
+              <td>0</td>
+              <td>2</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Leicester City</td>
+              <td>5</td>
+              <td>3</td>
+              <td>0</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Tottenham Hotspurs</td>
+              <td>5</td>
+              <td>8</td>
+              <td>2</td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Wolves</td>
+              <td>5</td>
+              <td>7</td>
+              <td>1</td>
+              <td>0</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+  <script src="./app.js"></script>
+</html>
