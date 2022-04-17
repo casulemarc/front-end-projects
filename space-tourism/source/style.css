@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed',
+        sans-serif;
+}
+
+
+body a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.body-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.body-section-destination {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.body-section-crew {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.body-section-technology {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.logo {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+}
+
+.menu {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    padding: 2rem;
+    border-radius: 3px;
+}
+
+.menu a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.menu a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.menu a:active {
+    border-bottom: 1px solid #fff;
+}
+
+main {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    padding: 2rem;
+    font-size: 1.5em;
+}
+
+main div {
+    margin-top: 1rem;
+    gap: 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bellefair', serif;
+}
+
+h1 {
+    font-size: 6em;
+    font-weight: 400;
+    font-family: 'Bellefair',
+        serif;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 400;
+    font-family: 'Bellefair',
+        sans-serif;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: 300;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1.3em;
+    font-family: 'Bellefair',
+        serif;
+}
+
+.left-section {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.right-section {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.shaped {
+    width: 400px;
+    height: 400px;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+.shaped:hover {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.inner-shape {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #000;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+    box-shadow: 5px 6px 10px #000;
+}
+
+.left-section img {
+    padding: 3.5rem;
+}
+
+.destinies {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.destinies a {
+    margin-right: 2rem;
+}
+
+.destinies a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.destinies a:active {
+    border-bottom: 1px solid #fff;
+}
+
+.destination-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.details-data {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details-data div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#hr {
+    background-color: #fff;
+    width: 100%;
+}
+
+.crew-section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top:1.5rem;
+    padding-bottom: 1rem; 
+}
+
+.crew-images {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+.technology-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.verticle-slider {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.verticle-slider div {
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: #000;
+}
+
+.tech-left-details {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    text-align: left;
+}
+
+.right-section .tech-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
