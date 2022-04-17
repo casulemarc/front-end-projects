@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="./source/style.css">
 
-    <title>Space Tourism | Developed by Mark Kasule</title>
+    <title>Technology - Space Tourism | Developed by Mark Kasule</title>
 </head>
 
 <body>
@@ -42,20 +42,20 @@
                 <h3>03 Space launch 101</h3>
                 <div class="technology-section">
                     <div class="verticle-slider">
-                        <div class="lanuch-buttons">
+                        <div class="launch-buttons" id="launch-1">
                             <h3>1</h3>
                         </div>
-                        <div class="lanuch-buttons">
+                        <div class="lanuch-buttons" id="launch-2">
                             <h3>2</h3>
                         </div>
-                        <div class="lanuch-buttons">
+                        <div class="lanuch-buttons" id="launch-3">
                             <h3>3</h3>
                         </div>
                     </div>
                     <div class="tech-left-details">
                         <h3>THE TERMINOLOGY</h3>
-                        <h2>LAUNCH VEHICLE</h2>
-                        <p>
+                        <h2 id="launch-name">LAUNCH VEHICLE</h2>
+                        <p id="launch-description">
                             Let’s face it; if you want to go to space, you might as well genuinely go to
                             outer space and not hover kind of on the edge of it. Well sit back, and relax
                             because we’ll give you a truly out of this world experience!
@@ -66,11 +66,14 @@
 
             <div class="right-section">
                 <div class="tech-image">
-                    <img src="/assets/technology/image-launch-vehicle-portrait.jpg" alt="">
+                    <img id="launch-image" src="/assets/technology/image-launch-vehicle-portrait.jpg" alt=""
+                        width="auto" height="500">
                 </div>
             </div>
         </main>
     </section>
+
+    <script src="/source/technology.js"></script>
 </body>
 
 </html>

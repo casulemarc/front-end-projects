@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="./source/style.css">
 
-    <title>Space Tourism | Developed by Mark Kasule</title>
+    <title>Destination - Space Tourism | Developed by Mark Kasule</title>
 </head>
 
 <body>
@@ -40,20 +40,21 @@
         <main>
             <div class="left-section">
                 <h3>01 PICK YOUR DESTINATION</h3>
-                <img src="/assets/destination/image-moon.webp" alt="" width="380" height="auto">
+                <img id="destiny-image" src="/assets/destination/image-mars.webp" alt="" width="380" height="auto">
             </div>
 
             <div class="right-section">
                 <div class="destinies">
-                    <a href="/destination.html">MOON</a>
-                    <a href="">MARS</a>
-                    <a href="">EUROPA</a>
-                    <a href="">TITAN</a>
+                    <h3 id="moon-tab">MOON</h3>
+                    <h3 id="mars-tab">MARS</h3>
+                    <h3 id="europa-tab">EUROPA</h3>
+                    <h3 id="titan-tab">TITAN</h3>
                 </div>
 
                 <div class="destination-details">
-                    <h1>Mars</h1>
-                    <p>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons,
+                    <h1 id="destination-title">Mars</h1>
+                    <p id="destination-description">Don’t forget to pack your hiking boots. You’ll need them to tackle
+                        Olympus Mons,
                         the tallest planetary mountain in our solar system. It’s two and a half times
                         the size of Everest!
                     </p>
@@ -66,11 +67,11 @@
                     <div class="details-data">
                         <div>
                             <h3>Avg. distance</h3>
-                            <h3>225 mil. km</h3>
+                            <h3 id="distance">225 mil. km</h3>
                         </div>
                         <div>
                             <h3>Est. travel time</h3>
-                            <h3>9 months</h3>
+                            <h3 id="months">9 months</h3>
                         </div>
                     </div>
                 </div>
@@ -78,6 +79,8 @@
             </div>
         </main>
     </section>
+
+    <script src="/source/destination.js"></script>
 </body>
 
 </html>
