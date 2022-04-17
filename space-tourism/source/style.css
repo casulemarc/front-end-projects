@@ -79,8 +79,9 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(40px);
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    backdrop-filter: blur(20px);
     padding: 2rem;
     border-radius: 3px;
 }
@@ -271,8 +272,8 @@ p {
     height: auto;
     justify-content: center;
     align-items: flex-start;
-    padding-top:1.5rem;
-    padding-bottom: 1rem; 
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .crew-images {
