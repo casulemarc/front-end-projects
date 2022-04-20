@@ -24,15 +24,15 @@
           <!--vertical bar-->
           <div class="vertical-bar">
             <!--icon plus-->
-            <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+            <svg id="add-vote" width="11" height="11" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 .136.05.254.15.353.098.1.216.149.353.149H6.33Z"
                 fill="#C5C6EF" />
             </svg>
             <!--Number of replies-->
-            <h4>12</h4>
+            <h4 id="upvote-1">0</h4>
             <!--icon minus-->
-            <svg width="11" height="3" xmlns="http://www.w3.org/2000/svg">
+            <svg id="sub-vote" width="11" height="3" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z"
                 fill="#C5C6EF" />
@@ -43,23 +43,68 @@
             <div class="post-header">
               <!--Profile data-->
               <div class="profile-data">
-                <img src="" alt="" width="50" height="50">
-                <h3>name</h3>
-                <p>1 month ago</p>
+                <img id="profile-image-1" src="" alt="" width="40" height="40">
+                <h3 id="profile-name-1"></h3>
+                <p id="time-stamp-1"></p>
               </div>
               <!--Reply button-->
-              <div class="reply button">
+              <div class="reply-button">
                 <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z"
                     fill="#5357B6" />
                 </svg>
-                <h3>Reply</h3>
+                <h3 id="reply-text">Reply</h3>
               </div>
             </div>
             <!--post body-->
             <div class="post-body">
-              <p>lorem ipsum dolor sit amet, consectetur</p>
+              <p id="post-content-1">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <!--vertical bar-->
+          <div class="vertical-bar">
+            <!--icon plus-->
+            <svg id="add-vote-2" width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 .136.05.254.15.353.098.1.216.149.353.149H6.33Z"
+                fill="#C5C6EF" />
+            </svg>
+            <!--Number of replies-->
+            <h4 id="upvote-2">0</h4>
+            <!--icon minus-->
+            <svg id="sub-vote-2" width="11" height="3" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z"
+                fill="#C5C6EF" />
+            </svg>
+          </div>
+          <div class="posting">
+            <!--post header-->
+            <div class="post-header">
+              <!--Profile data-->
+              <div class="profile-data">
+                <img id="profile-image-2" src="" alt="" width="40" height="40">
+                <h3 id="profile-name-2"></h3>
+                <p id="time-stamp-2"></p>
+              </div>
+              <!--Reply button-->
+              <div class="reply-button">
+                <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z"
+                    fill="#5357B6" />
+                </svg>
+                <h3 id="reply-text">Reply</h3>
+              </div>
+            </div>
+            <!--post body-->
+            <div class="post-body">
+              <p id="post-content-2">
+              </p>
             </div>
           </div>
         </div>
@@ -67,28 +112,159 @@
         <div class="reply">
           <!-- vertical line-->
           <div class="vertical-line">
-            horizontal line
+            <div id="line">
+            </div>
           </div>
           <!--Container for other comments-->
           <div class="reply-container">
-            <div>reply 1</div>
-            <div>reply 2</div>
+
+            <div id="reply-post">
+              <div class="post">
+                <!--vertical bar-->
+                <div class="vertical-bar">
+                  <!--icon plus-->
+                  <svg id="add-vote-3" width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 .136.05.254.15.353.098.1.216.149.353.149H6.33Z"
+                      fill="#C5C6EF" />
+                  </svg>
+                  <!--Number of replies-->
+                  <h4 id="upvote-3">0</h4>
+                  <!--icon minus-->
+                  <svg id="sub-vote-3" width="11" height="3" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z"
+                      fill="#C5C6EF" />
+                  </svg>
+                </div>
+                <div class="posting">
+                  <!--post header-->
+                  <div class="post-header">
+                    <!--Profile data-->
+                    <div class="profile-data">
+                      <img id="profile-image-3" src="" alt="" width="40" height="40">
+                      <h3 id="profile-name-3"></h3>
+                      <p id="time-stamp-3"></p>
+                    </div>
+                    <!--Reply button-->
+                    <div class="reply-button">
+                      <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z"
+                          fill="#5357B6" />
+                      </svg>
+                      <h3 id="reply-text">Reply</h3>
+                    </div>
+                  </div>
+                  <!--post body-->
+                  <div class="post-body">
+                    <p id="post-content-3">
+                      @<p id="at-username"></p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--MY reply post-->
+            <div id="reply-post">
+              <div class="post">
+                <!--vertical bar-->
+                <div class="vertical-bar">
+                  <!--icon plus-->
+                  <svg id="add-vote-4" width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 .136.05.254.15.353.098.1.216.149.353.149H6.33Z"
+                      fill="#C5C6EF" />
+                  </svg>
+                  <!--Number of replies-->
+                  <h4 id="upvote"></h4>
+                  <!--icon minus-->
+                  <svg id="sub-vote-4" width="11" height="3" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z"
+                      fill="#C5C6EF" />
+                  </svg>
+                </div>
+                <div class="posting">
+                  <!--post header-->
+                  <div class="post-header">
+                    <!--Profile data-->
+                    <div class="profile-data">
+                      <img id="profile-image" src="" alt="" width="40" height="40">
+                      <h3 id="profile-name"></h3>
+                      <span id="my-span-tag">you</span>
+                      <p id="time-stamp"></p>
+                    </div>
+                    <!--Reply button-->
+                    <div class="reply-button">
+                      <div class="delete-section">
+                        <svg width="12" height="14" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M1.167 12.448c0 .854.7 1.552 1.555 1.552h6.222c.856 0 1.556-.698 1.556-1.552V3.5H1.167v8.948Zm10.5-11.281H8.75L7.773 0h-3.88l-.976 1.167H0v1.166h11.667V1.167Z"
+                            fill="#ED6368" />
+                        </svg>
+                        <h3>Delete</h3>
+                      </div>
+                      <!--Edit button-->
+                      <div class="edit-section">
+                        <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M13.479 2.872 11.08.474a1.75 1.75 0 0 0-2.327-.06L.879 8.287a1.75 1.75 0 0 0-.5 1.06l-.375 3.648a.875.875 0 0 0 .875.954h.078l3.65-.333c.399-.04.773-.216 1.058-.499l7.875-7.875a1.68 1.68 0 0 0-.061-2.371Zm-2.975 2.923L8.159 3.449 9.865 1.7l2.389 2.39-1.75 1.706Z"
+                            fill="#5357B6" />
+                        </svg>
+                        <h3>Edit</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!--post body-->
+                  <div class="post-body">
+                    <p id="post-content">
+                      @<span id="at-nxt-username"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--WHAT'S ON YOUR MIND CLIENT POST - CRUD-->
+      <div class="main-post">
+        <!--POST-->
+        <div class="posting-now">
+          <!--post header-->
+          <div class="reply-profile">
+            <!--Profile data-->
+            <div class="profile-data">
+              <img id="current-user-image" src="" alt="" width="40" height="40">
+            </div>
+          </div>
+          <!--post body-->
+          <div class="post-body">
+            <textarea name="" id="post-now-text" cols="40" rows="8" placeholder="Add a comment.."
+              maxlength="100"></textarea>
+
+          </div>
+          <!--post button-->
+          <div class="post-button">
+            <button type="submit">SEND</button>
           </div>
         </div>
       </div>
     </section>
-
-    <!--FOOTER SECTION-->
-    <section>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-      </div>
-    </section>
   </main>
 
-
-
+  <!--FOOTER SECTION-->
+  <footer>
+    <div class="attribution">
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="http://mlkasule.com/">Mark Kasule</a>.
+      </p>
+    </div>
+  </footer>
   <script src="/source/script.js"></script>
 </body>
 
