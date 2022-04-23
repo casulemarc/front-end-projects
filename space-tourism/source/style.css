@@ -271,8 +271,8 @@ p {
     height: auto;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
+    /* padding-top: 1.5rem;
+    padding-bottom: 1rem; */
 }
 
 .crew-images {
@@ -282,8 +282,10 @@ p {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #ccc;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
 }
+
+.crew-images img {}
 
 .slider-controls {
     width: 100%;
@@ -504,8 +506,6 @@ p {
         gap: 5px;
         justify-content: center;
         align-items: center;
-        padding-left: 1rem;
-        padding-right: 1rem;
     }
 
     /* Crew*/
