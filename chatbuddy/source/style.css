@@ -40,7 +40,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 1rem;
 }
 
@@ -225,7 +225,7 @@ main {
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
 }
 
@@ -288,6 +288,11 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: hsl(238, 45%, 60%);
 }
 
 /*FOOTER*/
@@ -309,6 +314,11 @@ footer {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+.attribution a:hover {
+    color: hsl(228, 45%, 52%);
+}
+
 
 
 @media screen and (max-width: 400px) {

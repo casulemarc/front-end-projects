@@ -187,6 +187,8 @@ fetchData(4, clientImage, clientName, clientTime, clientContent, clientVote);
 
 //CURRENT USER (constructor)
 let message = document.getElementById("post-now-text");
+const currentUserImage = document.getElementById("profile-image");
+currentUserImage.src = "./images/avatars/image-juliusomo.webp";
 
 function fetchUserData() {
   fetch("./source/data.json")
