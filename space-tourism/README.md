@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/casulemarc/front-end-projects/tree/main/space-tourism)
-- Live Site URL: [In development](#)
+- Live Site URL: [Demo](https://spacemuseam.netlify.app/)
 
 ## My process
 
