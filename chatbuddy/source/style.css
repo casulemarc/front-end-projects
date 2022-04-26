@@ -148,7 +148,7 @@ main {
 }
 
 .reply-button {
-    width: 20%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -164,7 +164,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    width: 50%;
+    width: 100%;
 }
 
 .delete-section h3 {
@@ -187,7 +187,7 @@ main {
 .reply-board {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

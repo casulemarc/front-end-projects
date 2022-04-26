@@ -36,6 +36,35 @@ let atNextUsername = document.getElementById("at-nxt-username");
 let upVote = document.getElementById("add-vote");
 let downVote = document.getElementById("sub-vote");
 
+// vote accumulator
+function countVote() {
+  let scoreTotal = 0;
+  let count = 1;
+  let myUpVote = document.getElementById("my-add-vote");
+  let myDownVote = document.getElementById("my-sub-vote");
+  const clientVote = document.getElementById("my-upvote");
+
+  //add button
+  myUpVote.addEventListener("click", function () {
+    scoreTotal += count;
+    clientVote.innerText = scoreTotal;
+    // console.log("clicked");
+  });
+
+  //sub button
+  myDownVote.addEventListener("click", function () {
+    scoreTotal -= count;
+    if (scoreTotal > 0) {
+      clientVote.innerText = scoreTotal;
+    } else {
+      clientVote.innerText = 0;
+    }
+    // console.log("clicked");
+  });
+}
+
+countVote();
+
 //USER-2
 let upVote2 = document.getElementById("add-vote-2");
 let downVote2 = document.getElementById("sub-vote-2");
@@ -100,8 +129,7 @@ function fetchData(id, image, name, time, content, vote) {
         name.textContent = data.comments[1].replies[0].user.username;
         time.textContent = data.comments[1].replies[0].createdAt;
         atUsername = data.comments[1].replies[0].replyingTo;
-        content.textContent =
-          "@" + atUsername + " " + data.comments[1].replies[0].content;
+        content.textContent = "  " + data.comments[1].replies[0].content;
         vote.textContent = data.comments[1].replies[0].score;
         currentScore = vote.textContent;
 
@@ -121,8 +149,7 @@ function fetchData(id, image, name, time, content, vote) {
         name.textContent = data.comments[1].replies[1].user.username;
         time.textContent = data.comments[1].replies[1].createdAt;
         atUsername = data.comments[1].replies[1].replyingTo;
-        content.textContent =
-          "@" + atUsername + " " + data.comments[1].replies[1].content;
+        content.textContent = " " + data.comments[1].replies[1].content;
         vote.textContent = data.comments[1].replies[1].score;
         currentScore = vote.textContent;
 
@@ -197,6 +224,14 @@ const replySection = document.getElementById("my-reponse");
 const postNowSection = document.getElementById("posting-now");
 let myMsg = "";
 
+//BUTTON TWO
+let messageOne = document.getElementById("post-now-text-1");
+const sendBtnOne = document.getElementById("send-msg-1");
+let myPostOne = document.getElementById("post-content-reply-2");
+const replySectionOne = document.getElementById("my-reponse-1");
+const postNowSectionOne = document.getElementById("posting-now-1");
+let myMsgOne = "";
+
 //Send message Button
 function sendReplyPost() {
   //get value of text area on change
@@ -208,6 +243,17 @@ function sendReplyPost() {
       myPost.innerText = myMsg;
       replySection.style.display = "flex";
       postNowSection.style.display = "none";
+    });
+  });
+
+  messageOne.addEventListener("input", function (e) {
+    myMsgOne = e.target.value;
+    //store this message and sent it to div
+
+    sendBtnOne.addEventListener("click", function (e) {
+      myPostOne.innerText = myMsgOne;
+      replySectionOne.style.display = "flex";
+      postNowSectionOne.style.display = "none";
     });
   });
 }
@@ -228,6 +274,19 @@ function deleteReplyPost() {
 }
 deleteReplyPost();
 
+//delete message Button
+const deleteButtonOne = document.getElementById("delete-button-1");
+function deleteReplyPostOne() {
+  //get value of text area on change
+  deleteButtonOne.addEventListener("click", function (e) {
+    messageOne.value = "";
+    replySectionOne.style.display = "none";
+    postNowSectionOne.style.display = "flex";
+    // console.log("Delete clicked");
+  });
+}
+deleteReplyPostOne();
+
 //====================EDIT SECTION======================
 
 //Edit message Button
@@ -242,3 +301,16 @@ function editReplyPost() {
   });
 }
 editReplyPost();
+
+//Edit message Button two
+const editButtonOne = document.getElementById("edit-button-1");
+function editReplyPostOne() {
+  //get value of text area on change
+  editButtonOne.addEventListener("click", function (e) {
+    myPost.innerText = myMsg;
+    replySectionOne.style.display = "none";
+    postNowSectionOne.style.display = "flex";
+    // console.log("Edit clicked");
+  });
+}
+editReplyPostOne();
