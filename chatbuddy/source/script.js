@@ -185,26 +185,60 @@ fetchData(
 //CALL CLIENT DATA
 fetchData(4, clientImage, clientName, clientTime, clientContent, clientVote);
 
+//====================SEND POST SECTION======================
+
 //CURRENT USER (constructor)
 let message = document.getElementById("post-now-text");
+const sendBtn = document.getElementById("send-msg");
 const currentUserImage = document.getElementById("profile-image");
 currentUserImage.src = "./images/avatars/image-juliusomo.webp";
+let myPost = document.getElementById("post-content");
+const replySection = document.getElementById("my-reponse");
+const postNowSection = document.getElementById("posting-now");
+let myMsg = "";
 
-function fetchUserData() {
-  fetch("./source/data.json")
-    .then((response) => response.json())
-    .then((data) => {
-      const currentUserImage = document.getElementById("current-user-image");
-      currentUserImage.src = data.currentUser.image.webp;
+//Send message Button
+function sendReplyPost() {
+  //get value of text area on change
+  message.addEventListener("input", function (e) {
+    myMsg = e.target.value;
+    //store this message and sent it to div
 
-      //get value of text area on change
-      message.addEventListener("input", function (e) {
-        let mymsg = e.target.value;
-        //store this message and sent it to div
-        // console.log(mymsg);
-      });
-    })
-    .catch((error) => console.error(error));
+    sendBtn.addEventListener("click", function (e) {
+      myPost.innerText = myMsg;
+      replySection.style.display = "flex";
+      postNowSection.style.display = "none";
+    });
+  });
 }
+sendReplyPost();
 
-fetchUserData();
+//====================DELETE SECTION======================
+
+//delete message Button
+const deleteButton = document.getElementById("delete-button");
+function deleteReplyPost() {
+  //get value of text area on change
+  deleteButton.addEventListener("click", function (e) {
+    message.value = "";
+    replySection.style.display = "none";
+    postNowSection.style.display = "flex";
+    // console.log("Delete clicked");
+  });
+}
+deleteReplyPost();
+
+//====================EDIT SECTION======================
+
+//Edit message Button
+const editButton = document.getElementById("edit-button");
+function editReplyPost() {
+  //get value of text area on change
+  editButton.addEventListener("click", function (e) {
+    myPost.innerText = myMsg;
+    replySection.style.display = "none";
+    postNowSection.style.display = "flex";
+    // console.log("Edit clicked");
+  });
+}
+editReplyPost();
