@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHUb](#)
-- Live Site URL: [Demo]()
+- Solution URL: [GitHub](https://github.com/casulemarc/front-end-projects/tree/main/chatbuddy)
+- Live Site URL: [XhatBuddy](https://xhatbuddy.netlify.app/)
 
 ## My process
 
@@ -49,9 +49,11 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-### What I learned
+### Lesson
+Used CRUD skills to manipulate the DOM for what users entered into the the textarea with an option to edit their posts. Users are also able to completely delete the posts.
 
 ### Continued development
+Will add logos and timestamps for each post added to create a full social media app.
 
 ## Author
 

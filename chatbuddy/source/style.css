@@ -187,6 +187,16 @@ main {
 .reply-board {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reply-board #my-reponse-1 {
+    width: 100%;
+    height: 100%;
     display: none;
     flex-direction: row;
     justify-content: space-between;
@@ -238,14 +248,18 @@ main {
     align-items: flex-end;
 }
 
+#time-stamp {
+    width: 100%;
+}
 
 .posting-now {
     width: 100%;
     display: flex;
+    flex: wrap;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 2rem;
+    padding: 1rem;
     gap: 1rem;
     border-radius: 1rem;
     background-color: hsl(0, 0%, 100%);
@@ -262,12 +276,13 @@ main {
 }
 
 .post-body {
-    width: 85%;
+    width: 100%;
+
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 2px;
+    gap: 5px;
     color: hsl(211, 10%, 45%);
 }
 
@@ -330,15 +345,23 @@ footer {
 
 
 
-@media screen and (max-width: 400px) {
+@media only screen and (max-width: 700px) {
+
+    body {
+        font-size: small;
+    }
+
     .post-section {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        margin-right: 5%;
         margin-top: 5%;
         margin-bottom: 5%;
         padding: 1rem;
-        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        flex: wrap;
     }
 
     .vertical-bar {
@@ -351,7 +374,50 @@ footer {
         gap: 1.5rem;
         padding: 1rem;
         border-radius: 1rem;
-        background-color: red;
-
     }
+
+    .posting {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .post-header {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-data {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .posting-now {
+        width: 100%;
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 1rem;
+        background-color: hsl(0, 0%, 100%);
+        box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .post-button {
+        width: 100%;
+    }
+
+    .reply-button {
+        justify-content: center;
+        align-items: center;
+    }
+
 }
