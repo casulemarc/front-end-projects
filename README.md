@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/desktop-design.jpg)
+![desktop-preview](https://user-images.githubusercontent.com/31680529/167487679-fc32b8be-082e-4427-bbd4-a5b96c4a4927.jpg)
 
 
 ### Links
