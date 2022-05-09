@@ -90,4 +90,4 @@ menuClose.addEventListener("click", function (e) {
 
 ## Acknowledgments
 
-This project is for junior developers who are interested in uping their front ends skills. Credit to front end mentor for providing this project for free.
+This project is for junior developers who are interested in upping their front ends skills. Credit to front end mentor for providing this project for free.
