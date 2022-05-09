@@ -1,4 +1,4 @@
-# Frontend Mentor - Intro section with dropdown navigation solution
+# SNAP LANDING PAGE - FRONTEND MENTOR CHALLENGE
 
 This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution Url: [GITHUB](https://github.com/casulemarc/front-end-projects/tree/main/snap-landing-page)
+- Live Site URL: [Snap Demo](https://snap-remote-work.netlify.app/)
 
 ## My process
 
@@ -90,4 +90,4 @@ menuClose.addEventListener("click", function (e) {
 
 ## Acknowledgments
 
-This project is for junior developers who are interested in uping their front ends skills. Credit to front end mentor for providing this project for free.
+This project is for junior developers who are interested in upping their front ends skills. Credit to front end mentor for providing this project for free.
